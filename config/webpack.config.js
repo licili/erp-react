@@ -545,7 +545,10 @@ module.exports = function (webpackEnv) {
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
-                  modules:true
+                  modules: {
+                    // 定制hash名
+                    // localIdentName:'[name]__[local]___[hash:base:64:5]'
+                  }
                 },
                 'less-loader'
               ),
@@ -565,8 +568,8 @@ module.exports = function (webpackEnv) {
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
-                  modules: true,
-                  getLocalIdent:getCSSModuleLocalIdent,
+                  // modules: true,
+                  // getLocalIdent:getCSSModuleLocalIdent,
                 },
                 'less-loader'
               ),

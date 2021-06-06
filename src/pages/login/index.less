@@ -1,0 +1,57 @@
+:global {
+  .login-page {
+    .login-content-wrap {
+      min-height: 550px;
+      height: calc(~'100vh');
+      background-color: skyblue;
+      .login-content {
+        position: relative;
+        top: 50%;
+        display: flex;
+        min-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(-50%);
+        .word {
+          flex: 6;
+          padding-right: 20px;
+          line-height: 1.4;
+          text-align: center;
+          color: #fff;
+          font-size: 32px;
+          font-weight: bold;
+        }
+
+        .login-box {
+          position: relative;
+          margin-right: 150px;
+          max-width: 350px;
+          // min-height: 400px;
+          flex: 2;
+          padding: 30px 40px 0 40px;
+          background-color: #fff;
+          border-radius: 5px;
+          overflow: hidden;
+          .title {
+            line-height: 1;
+            margin-bottom: 60px;
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .login-form-button {
+      width: 100% ;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+}
