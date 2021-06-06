@@ -6,9 +6,10 @@ import './style/common.less'; //公共样式
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <ERouter />
-  </React.StrictMode>,
+  // </React.StrictMode >
+  ,
   document.getElementById('root')
 );
 

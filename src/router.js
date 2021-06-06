@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Switch, Route, Router, Redirect } from 'react-router-dom';
+import { Switch, Route, Router, Redirect } from 'react-router-dom';
 import history from './history' //我们用的是browser history
 import App from './App';
 import Home from './pages/home'

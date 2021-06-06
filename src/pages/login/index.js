@@ -1,4 +1,4 @@
-import React, { useState,Component } from 'react'
+import React, {Component } from 'react'
 import { Form,Input,Button} from 'antd'
 import './index.less'
 import BaseService from '../../components/baseService'
@@ -12,8 +12,7 @@ export default class Login extends Component {
       isMock: true,
       data:data
     }).then((response) => {
-      console.log(response,"???????");
-      if (response.code == 0) {
+      if (response.code === 0) {
         history.push('/home')
       } else {
 

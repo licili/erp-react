@@ -1,0 +1,12 @@
+:global .order {
+  background-color: #FFF;
+  width: 100%;
+  margin: 10px;
+}
+:global .order-top {
+  background-color: #FFF;
+  padding: 20px 10px  10px;
+}
+:global .order-top .ant-form-item {
+  margin-top: 5px;
+}

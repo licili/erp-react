@@ -30,7 +30,7 @@ export default class BaseService {
         baseURL:options.baseURL
       }).then((response) => {
         console.log(response,'hhhhh');
-        if (response.status == 200) {
+        if (response.status === 200) {
           let result = response.data;
           if (result.error) {
             console.log(result.error);

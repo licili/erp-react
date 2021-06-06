@@ -1,0 +1,21 @@
+:global .home-page {
+  height: 100vh;
+}
+:global .home-page-header {
+  height: 48px;
+}
+:global .home-page-section {
+  height: calc(100vh - 48px);
+}
+:global .home-page-section-sidebar {
+  height: 100%;
+  overflow-y: scroll;
+}
+:global .home-page-section-sidebar::-webkit-scrollbar {
+  display: none;
+}
+:global .home-page-section-content {
+  background-color: #ebe8e8;
+  display: flex;
+  height: 100%;
+}

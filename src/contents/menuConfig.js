@@ -1,8 +1,8 @@
-export default [
+let menuList =  [
   {
     title: '运营管理',
     key: '/home',
-    chilren: [
+    children: [
       {
         title: '用户管理',
         key: '/order',
@@ -12,13 +12,13 @@ export default [
       },
       {
         title: '认证管理',
-        key: '/use/bike',
+        key: '/order1',
         btnList: [
         ]
       },
       {
         title: '身份审核',
-        key: '/order',
+        key: '/order2',
         btnList: [
           // 这个按钮和权限有关系。有就开放，没有就不开放
           {aa:'123'}
@@ -29,14 +29,14 @@ export default [
   {
     title: '营销管理',
     key: '/platform/market',
-    chilren: [
+    children: [
       {
         title: '活动管理',
-        key: '/acmamager',
-        chilren: [
+        key: '/ativity',
+        children: [
           {
             title: '活动管理',
-            key: '/activity',
+            key: '/activity/manage',
             btnList:[]
           }
         ]
@@ -53,7 +53,8 @@ export default [
         btnList: [
           {aa:'123'}
         ]
-      },
+      }
     ]
   },
 ]
+export default menuList;
