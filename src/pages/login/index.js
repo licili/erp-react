@@ -42,7 +42,6 @@ class LoginForm extends Component {
   handleFinsh = (values) => {
     // value 就是表单提交过来的数据。我们可以在这里直接请求后台API，看他是否有权去访问后台。
     // 我们也可以直接把它提交到父组件上。父组件会对它的一些状态进行实时刷新。由父组件统一进行汇总
-    console.log(values);
     // 对值进行判断
     // 把value值传到父组件 (回传)
     this.props.loginSubmit(values);

@@ -29,13 +29,12 @@ export default class BaseService {
         timeout: 8000,
         baseURL:options.baseURL
       }).then((response) => {
-        console.log(response,'hhhhh');
         if (response.status === 200) {
           let result = response.data;
           if (result.error) {
             console.log(result.error);
           }
-          resolve(result.data)
+          resolve(result)
         } else {
           reject(response.data)
         }
